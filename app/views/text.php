@@ -11,6 +11,7 @@
 		<form method="post" action="/text">
 			<label for="lines">Number of lines to generate</label>
 			<input name="lines"></input>
+			<button type="submit">Submit</button>
 		</form>
 	</body>
 </html>
