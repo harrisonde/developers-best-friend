@@ -19,7 +19,7 @@ Loading the application will present a landing page with links to the aforementi
 
 I hope you enjoy!
 
-###Routs
+###Routes
 It is always nice to under the URL structure of an application - expressive clean URLs! This application will use the following routs:
 
 | Method  | Route | Description                  |
