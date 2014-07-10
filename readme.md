@@ -22,11 +22,6 @@ I hope you enjoy!
 ###Routs
 It is always nice to under the URL structure of an application - expressive clean URLs! This application will use the following routs:
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
 | Method  | Route | Description                  |
 |-------- | ----- | ---------------------------- |
 | GET     | /     | index						 |
