@@ -18,28 +18,17 @@
 | POST    | /user | handle user generation       |
 | 
 */
-
-
-
 Route::get('/', function()
 {
-	return View::make('landing');
+	return View::make('index');
 });
-Route::get('/text', function()
-{
-	return View::make('text');
-});
-Route::get('/user', function()
-{
-	return View::make('text');
-});
+
+Route::resource('/text/{text?}','LoremIpsumController@showParagraph');
 
 Route::post('/text', 'LoremIpsumController@showParagraph');	
 
-Route::get('/user', function()
-{
-	return View::make('text');
-});
+
+
 App::missing(function($exception){
      return Response::make("Page not found", 404);
 });
