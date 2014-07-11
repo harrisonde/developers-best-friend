@@ -39,7 +39,7 @@ class LoremIpsumController extends BaseController {
 		}
 		
 		if($numlines !== 0){
-			echo('aa');
+			
 			//Create paragraphs
 			$html = getIpsum($numlines);
 
@@ -47,27 +47,25 @@ class LoremIpsumController extends BaseController {
 			return View::make('text')->with('text', $html);
 
 		}
+		
 		// Requested Lorem Ipsum via query string
 		else if($pram_url > 0)
 		{
-				echo('a');
-				
-				//Create paragraphs
-				$html = getIpsum($pram_url);
-				
-				// Passing Data To View
-				return View::make('text')->with('text', $html);
+		
+			//Create paragraphs
+			$html = getIpsum($pram_url);
+			
+			// Passing Data To View
+			return View::make('text')->with('text', $html);
 		}
+		
 		// return just the default view.
 		else{
-		
-				echo('c');
 				
-				// return the default view;
-				return View::make('text');
+			// return the default view;
+			return View::make('text');
 			
 		}
-		
 		
 	}
 	
