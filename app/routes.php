@@ -18,14 +18,28 @@
 | POST    | /user | handle user generation       |
 | 
 */
+
+
 Route::get('/', function()
 {
 	return View::make('index');
 });
 
-Route::resource('/text/{text?}','LoremIpsumController@showParagraph');
 
-Route::post('/text', 'LoremIpsumController@showParagraph');	
+//http://atomicplayboy.net/blog/2013/06/19/nested-resource-controllers-in-laravel/
+
+/*
+*
+*Laravel allows you to easily define a single route to handle every action in a controller using simple, REST naming conventions. First, define the route using the Route::controller method:
+*
+* Use the Artisan CLI to create a scaffold of empty stub methods corresponding to the CRUD verbs:	
+*/
+
+Route::resource('user','UserGeneratorController');
+Route::resource('text','LoremIpsumController@showParagraph');
+
+//Route::post('/text', 'LoremIpsumController@showParagraph');	
+
 
 
 
