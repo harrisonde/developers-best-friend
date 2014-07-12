@@ -14,6 +14,8 @@
 		{{ Form::submit('Click Me!') }}
 	{{ Form::close() }}
 	
+	<?php echo(public_path() . '/images/people/'); ?>
+	
 	<!-- display a user -->
 	@if (isset($users))
 		@foreach($users as $user) 
