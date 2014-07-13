@@ -66,19 +66,46 @@
 @stop
 
 @section('user-example')
-	<div class="block-inner user-example">
-    	
+	
+	<div class="cards">
+	  
+	
+	 
 	</div>
+	
+	
+	
 	<script>
 		$.ajax({
-			url: '<?php echo URL::asset('/user/1'); ?>',
+			url: '<?php echo URL::asset('/user/3'); ?>',
 			dataType: 'json',
 			error: function(textStatus, errorThrown, jqXHR ){ 
 				alert('error pulling');						
 			},
 			type: "GET",
 			success: function(json){
-				$('.user-example').append('<div>'+'<div class="image"><img src="'+json[0].image+'"/></div><div class="name">'+json[0].name+'</div><div class="address">'+json[0].address+'</div></div>');
+				for(i=0; i < json.length; i++){
+					$('.cards').append(
+					'<div class="card">'
+				    +'<div class="card-image">'
+				    +'<img src="'+json[i].image+'" alt="">'
+				    +'</div>'
+				    +'<div class="card-header">'
+				      +json[i].name
+				    +'</div>'
+				    +'<div class="card-copy">'
+				      +'<p>'+json[i].address+'</p>'
+				    +'</div>'
+				    +'<div class="card-stats">'
+				      +'<ul>'
+				        +'<li>98<span>Items</span></li>'
+				        +'<li>298<span>Things</span></li>'
+				        +'<li>923<span>Objects</span></li>'
+				      +'</ul>'
+				    +'</div>'
+				  +'</div>'
+				  );
+			   }
 			}
 		});	
 	</script>

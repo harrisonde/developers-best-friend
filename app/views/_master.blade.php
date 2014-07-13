@@ -44,7 +44,7 @@
 			    	<a href="" class="hero-logo"><img src="images/icon/logo@2x.png" alt="logo" width="74" height="79"></a>
 					<div class="hero-copy">
 						@yield('hero')	
-						 @yield('contents')			
+						 @yield('contents')	
 					</div>
 				</div>	
 			</div>
@@ -61,9 +61,9 @@
 					@yield('user')
 			</article>
 			<!-- user example -->
-			<div class="block">
+			
 					@yield('user-example')
-			</div>
+			
 			<!-- footer -->		
 			<footer class="footer">
 				<div class="footer-logo">
