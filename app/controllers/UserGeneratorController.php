@@ -35,7 +35,8 @@ class UserGeneratorController extends \BaseController {
 	{		
 		
 		/*
-		* Handy little function to make fake user working with Faker and selecting images at random from a public folder
+		* Handy dandy little function to make fake user working with Faker and selecting images at random from a
+		* public folder. This little cat kicks out some sweet JSON for you. Hope you enjoy it.
 		*/
 		function makeUser($numUsers)
 		{	
@@ -132,7 +133,7 @@ class UserGeneratorController extends \BaseController {
 		$singleUser = makeUser($numUsers);
 		
 		// return with fake user data
-		return View::make('user')->with('users', $singleUser);
+		return Response::json($singleUser);
 		
 	}
 
