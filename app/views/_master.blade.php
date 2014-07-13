@@ -4,9 +4,95 @@
 	<head>
 		<!-- Craft a yeald for the title with a default if nothing included in the child blade or child view. -->
 		<title> @yield('title', 'Developer\'s Best Friend') </title>
+		<link href="<?php echo URL::asset('/styles/normalize.3.0.1.css'); ?>" rel="stylesheet" type="text/css">
+		<link href="<?php echo URL::asset('/styles/styles.css'); ?>" rel="stylesheet" type="text/css">
+		<!-- include the pesky fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+		<!-- include scripts -->
+		<script src="<?php echo URL::asset('/scripts/vendor/jquery/jQuery-10.1.2.js'); ?>" type="text/javascript"></script> 
+		<script src="<?php echo URL::asset('/scripts/vendor/google-code-prettify/run_prettify.js'); ?>" type="text/javascript"></script> 
 	</head>
 	<body>	
-		<!-- Blade content placeholder -->
-		@yield('contents')
+		<section id="pageWrapper">
+			<header class="navigation">
+		        <div class="menu-wrapper">
+		            
+		
+		            <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
+		
+		            <div class="nav">
+		                <ul id="navigation-menu">
+		                    
+		                    <li class="nav-link"><a href="/">Home</a></li>
+		                    
+		                    <li class="nav-link"><a href="/text">Text</a></li>
+		
+		                    <li class="nav-link"><a href="/user">Users</a></li>
+		
+		                    <li class="nav-link"><a href="javascript:void(0)">Examples</a></li>
+		
+		                </ul>
+		            </div>
+		        </div>
+		    </header>
+		  
+			<!-- hero -->
+			<div class="hero">
+				<div class="hero-inner">
+			    	<a href="" class="hero-logo"><img src="images/icon/logo@2x.png" alt="logo" width="74" height="79"></a>
+					<div class="hero-copy">
+						@yield('hero')	
+						 @yield('contents')			
+					</div>
+				</div>	
+			</div>
+			<!-- article -->
+			<article class="type-system-serif">
+					@yield('ipsum')
+			</article>
+			<!-- ipsum example -->
+			<div class="block">
+					@yield('ipsum-example')
+			</div>
+			<!-- article -->
+			<article class="type-system-serif">
+					@yield('user')
+			</article>
+			<!-- user example -->
+			<div class="block">
+					@yield('user-example')
+			</div>
+			<!-- footer -->		
+			<footer class="footer">
+				<div class="footer-logo">
+					 <img src="images/icon/logo@2x.png" alt="logo" width="74" height="79" />
+				</div>
+				<div class="footer-links">
+					<ul class="nav">
+					  <li><h3>Content</h3></li>
+					  <li><a href="javascript:void(0)">Questions</a></li>
+					  <li><a href="javascript:void(0)">Humor</a></li>
+					  <li><a href="javascript:void(0)">Github Repositories</a></li>
+					</ul>
+					<ul>
+					  <li><h3>Follow me</h3></li>
+					  <li><a href="https://www.facebook.com/harrison.destefano">Facebook</a></li>
+					  <li><a href="https://twitter.com/whddesign">Twitter</a></li>
+					  <li><a href="https://vimeo.com/user25972361">Vimeo</a></li>
+					</ul>
+					<ul>
+					  <li><h3>Recommended</h3></li>
+					  <li><a href="https://panic.com/coda/">Coda2</a></li>
+					  <li><a href="https://github.com/">Github</a></li>
+					  <li><a href="https://about.gitlab.com/">GitLab</a></li>
+					  <li><a href="https://owncloud.org/">Owncloud</a></li>
+					</ul>
+				</div>
+				<hr>
+				<p>Created by Harrison DeStefano and some really rad resources.</p>
+			</footer>
+		</section>
 	</body>
 </html>

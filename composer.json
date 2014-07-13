@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		 "badcow/lorem-ipsum": "dev-master",
-		"fzaninotto/faker": "1.4"
+		"fzaninotto/faker": "1.4",
+		"imagecow/imagecow": "*"
 	},
 	"autoload": {
 		"classmap": [
