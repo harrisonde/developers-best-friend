@@ -40,4 +40,4 @@ Please, go enjoy some bad [badcow/lorem-ipsum](https://packagist.org/packages/ba
 Go ahead, go look at [fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker) 
 
 ### User Images
-Well, you have to love the internet at 1:00AM EST. You can find just about anything, and thanks to Greg Peverill-Conti I have user images. So, thank said - all image used in this project are copyrighted under a Creative Commons BY-NC-SA 2.0 license from Greg Peverill-Conti's 1,000 faces project.
+Well, you have to love the internet at 1:00AM EST. You can find just about anything, and thanks to Greg Peverill-Conti I have user images. So, that said - all image used in this project are copyrighted under a Creative Commons BY-NC-SA 2.0 license from Greg Peverill-Conti's 1,000 faces project.
