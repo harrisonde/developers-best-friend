@@ -15,4 +15,15 @@
 			<a href="/user">Random User Generator</a>
 		</li>
 	</ul>
+	<p>I also give JSON too. You can git a little JSON like so:</p>
+	<ul>
+		<li>Text Generator</li>
+		<ul>
+			<li><a href="/text/3">/text/{ipsums} - Return two (2) paragraphs of Lorem Ipsum.</a></li>
+		</ul>
+		<li>User Generator</li>
+		<ul>
+			<li><a href="/user/3">/user/{users} - Return three (3) users.</a></li>
+		</ul>
+	</ul>
 @stop		

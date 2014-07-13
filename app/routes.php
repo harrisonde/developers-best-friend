@@ -36,7 +36,7 @@ Route::get('/', function()
 * corresponding to the CRUD verbs:	
 */
 Route::resource('user','UserGeneratorController');
-Route::resource('text','LoremIpsumController@showParagraph');
+Route::resource('text','LoremIpsumController');
 /*
 * Laravel will let use display a good old 404, let's use that little guy. 
 */
