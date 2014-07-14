@@ -32,6 +32,28 @@ It is always nice to under the URL structure of an application - expressive clea
 | POST    | /user      | handle user generation              |
 | POST    | /user{num} | generate X num of fake users        |
 
+###Lorem Ipsum Generator
+Creating placeholder text is super annoying. The Lorem Ipsum Generator will help get the job done, fast.
+
+####How to use.
+#####Basic
+Get your lorem ipsum the good old fashion way and use our form. All you need to do is let us know the number of paragraphs of placeholder text you need - we do the rest.
+
+#####API
+Feel free to call our API on the fly and pull a few lines of lorem ipsum. Using AJAX is one way you can ask the generator for lorem ipsum.
+
+    $.ajax({
+        url: 'http://p3.harrisondestefano.com/text/2',
+        dataType: 'json',
+        error: function(textStatus, errorThrown, jqXHR ){ 
+        alert('error pulling');				
+    },
+        type: "GET",
+        success: function(json){
+                alert(json);
+        }
+    }); 
+
 ## Packages
 Several packages were used in the making of this application. All are awesome because each is open source - go community!
 
