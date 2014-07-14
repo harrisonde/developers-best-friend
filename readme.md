@@ -22,25 +22,15 @@ I hope you enjoy!
 ###Routes
 It is always nice to under the URL structure of an application - expressive clean URLs! This application will use the following routs:
 
-|  Method                   | Route        | Description                     |
-| ------------------------- | ------------ | ------------------------------- |
-| GET|HEAD /                |              | Closure                         |
-| GET|HEAD user             | user.index   | UserGeneratorController@index   |
-| GET|HEAD user/create      | user.create  | UserGeneratorController@create  |
-| POST user                 | user.store   | UserGeneratorController@store   |
-| GET|HEAD user/{user}      | user.show    | UserGeneratorController@show    |
-| GET|HEAD user/{user}/edit | user.edit    | UserGeneratorController@edit    |
-| PUT user/{user}           | user.update  | UserGeneratorController@update  |
-| PATCH user/{user}         |              | UserGeneratorController@update  |
-| DELETE user/{user}        | user.destroy | UserGeneratorController@destroy |
-| GET|HEAD text             | text.index   | LoremIpsumController@index      |
-| GET|HEAD text/create      | text.create  | LoremIpsumController@create     |
-| POST text                 | text.store   | LoremIpsumController@store      |
-| GET|HEAD text/{text}      | text.show    | LoremIpsumController@show       |
-| GET|HEAD text/{text}/edit | text.edit    | LoremIpsumController@edit       |
-| PUT text/{text}           | text.update  | LoremIpsumController@update     |
-| PATCH text/{text}         |              | LoremIpsumController@update     |
-| DELETE text/{text}        | text.destroy | LoremIpsumController@destroy    |
+| Method  | Route | Description                  |
+|-------- | ----- | ---------------------------- |
+| GET     | /          | index						         |
+| GET     | /text      | lore ipsum generator form           |
+| GET     | /user      | user generator form                 |
+| POST    | /text      | handel lore ipsum generation        |
+| POST    | /text{num} | Generaten  X num paragraphs of ipsum|
+| POST    | /user      | handle user generation              |
+| POST    | /user{num} | generate X num of fake users        |
 
 ## Packages
 Several packages were used in the making of this application. All are awesome because each is open source - go community!
