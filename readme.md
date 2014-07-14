@@ -69,13 +69,13 @@ It is always nice to under the URL structure of an application - expressive clea
 
 | Method  | Route | Description                  |
 |-------- | ----- | ---------------------------- |
-| GET     | /          | index						         |
-| GET     | /text      | lore ipsum generator form           |
-| GET     | /user      | user generator form                 |
-| POST    | /text      | handel lore ipsum generation        |
-| POST    | /text{num} | Generaten  X num paragraphs of ipsum|
-| POST    | /user      | handle user generation              |
-| POST    | /user{num} | generate X num of fake users        |
+| GET     | /          | index						           |
+| GET     | /text      | lore ipsum generator form             |
+| GET     | /user      | user generator form                   |
+| POST    | /text      | handel lore ipsum generation          |
+| POST    | /text{num?} | Generaten  X num paragraphs of ipsum |
+| POST    | /user      | handle user generation                |
+| POST    | /user{num?} | generate X num of fake users         |
 
 ## Packages
 Several packages were used in the making of this application. All are awesome because each is open source - go community!
@@ -88,3 +88,6 @@ Go ahead, go look at [fzaninotto/faker](https://packagist.org/packages/fzaninott
 
 #### User Images
 Well, you have to love the internet at 1:00AM EST. You can find just about anything, and thanks to Greg Peverill-Conti I have user images. So, that said - all image used in this project are copyrighted under a Creative Commons BY-NC-SA 2.0 license from Greg Peverill-Conti's 1,000 faces project.
+
+## The "Black Box" demystified
+The [black box](http://en.wikipedia.org/wiki/Black_box "wikipedia tells all") or website is constructed with HTML5, CSS3 and JavaScript. All the really fancy goodies are driven by Bourbon, Neat, Bitters, and Refils. Big thanks to the [Thoughtbot](http://thoughtbot.com/ "Visit the gods of SASS") for maintaining and funding the project. Don't know where the development community would be without folks like these!
