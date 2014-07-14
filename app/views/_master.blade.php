@@ -12,6 +12,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
 		<!-- include scripts -->
 		<script src="<?php echo URL::asset('/scripts/vendor/jquery/jQuery-10.1.2.js'); ?>" type="text/javascript"></script> 
+		<script src="<?php echo URL::asset('/scripts/client.js'); ?>" type="text/javascript"></script> 
 		<script src="<?php echo URL::asset('/scripts/vendor/google-code-prettify/run_prettify.js'); ?>" type="text/javascript"></script> 
 	</head>
 	<body>	
@@ -64,5 +65,13 @@
 				<p>Created by Harrison DeStefano and some really rad resources.</p>
 			</footer>
 		</section>
+		<!-- clide side scripts -->
+		<script>
+			// load
+			$(document).ready( function(){
+				// do not clobber 
+				DEVELOPERSFRIEND.init();
+			});
+		</script>
 	</body>
 </html>
