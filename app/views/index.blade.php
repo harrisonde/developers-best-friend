@@ -124,10 +124,10 @@
 			url: '<?php echo URL::asset('/user/3'); ?>',
 			dataType: 'json',
 			error: function(textStatus, errorThrown, jqXHR ){ 
-				alert('error pulling');						
+				$('.cards').append('error loading fake users');						
 			},
 			type: "GET",
-			success: function(json){
+			success: function(json){	
 				for(i=0; i < json.length; i++){
 					$('.cards').append(
 					'<div class="card">'
@@ -141,11 +141,6 @@
 				      +'<p>'+json[i].address+'</p>'
 				    +'</div>'
 				    +'<div class="card-stats">'
-				      +'<ul>'
-				        +'<li>98<span>Items</span></li>'
-				        +'<li>298<span>Things</span></li>'
-				        +'<li>923<span>Objects</span></li>'
-				      +'</ul>'
 				    +'</div>'
 				  +'</div>'
 				  );

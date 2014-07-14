@@ -63,7 +63,7 @@ class UserGeneratorController extends \BaseController {
 				for($i=0; $i < $numUsers; $i++)
 				{
 					// store said fake user data
-					array_push($userGroup, array('name' => $userFactory->name, 'address' =>  $userFactory->address, 'image' => $userImage[array_rand($userImage)]));
+					array_push($userGroup, array('name' => $userFactory->name, 'address' =>  $userFactory->address, 'image' => $userImage[array_rand($userImage)] ));
 					
 					
 				}
@@ -120,7 +120,6 @@ class UserGeneratorController extends \BaseController {
 			{
 				// store said fake user data
 				array_push($userGroup, array('name' => $userFactory->name, 'address' =>  $userFactory->address, 'image' => $userImage[array_rand($userImage)]));
-				
 				
 			}
 			
