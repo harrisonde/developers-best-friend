@@ -1245,6 +1245,8 @@ article.type-system-serif {
   article.type-system-serif p.author {
     font-family: 'Merriweather', serif;
     font-style: italic; }
+  article.type-system-serif form {
+    padding-bottom: 2em; }
 
 .footer {
   background: #40526b;

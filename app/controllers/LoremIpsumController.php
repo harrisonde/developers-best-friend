@@ -41,9 +41,8 @@ class LoremIpsumController extends BaseController {
 			//Create paragraphs
 			$generator = new Badcow\LoremIpsum\Generator();
 			$paragraphs = $generator->getParagraphs($numParagraphs);
-			$htmlAsString = implode('<p>', $paragraphs);
-			
-			return $htmlAsString;
+
+			return $paragraphs;
 
 		}
 					
