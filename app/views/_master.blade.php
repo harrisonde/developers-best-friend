@@ -31,8 +31,6 @@
 		
 		                    <li class="nav-link"><a href="/user">Users</a></li>
 		
-		                    <li class="nav-link"><a href="javascript:void(0)">Examples</a></li>
-		
 		                </ul>
 		            </div>
 		        </div>

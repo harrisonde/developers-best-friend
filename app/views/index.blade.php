@@ -63,18 +63,27 @@
 	<p>Get your fake users the good old fashion way and use our form. All you need to do is let us know the number of user and we do the rest.</p>
 	<h3>API</h3>
 	<p>Feel free to call our API. We recommend AJAX to get the job done.</p>
+	<pre class="prettyprint">	
+	$.ajax({
+			url: '<?php echo URL::asset('/user/1'); ?>',
+			dataType: 'json',
+			error: function(textStatus, errorThrown, jqXHR ){ 
+				alert('error pulling');						
+			},
+			type: "GET",
+			success: function(json){
+				alert(json);
+			}
+		});	
+	</pre>
 @stop
 
 @section('user-example')
 	
 	<div class="cards">
-	  
-	
-	 
+	  	 
 	</div>
-	
-	
-	
+
 	<script>
 		$.ajax({
 			url: '<?php echo URL::asset('/user/3'); ?>',
