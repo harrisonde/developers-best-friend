@@ -1037,11 +1037,6 @@ header.navigation {
           .hero .hero-inner .hero-copy p {
             font-size: 1.2em;
             max-width: 40%; } }
-  .hero img.user {
-    border-radius: 50%;
-    width: 160px; }
-  .hero .users {
-    padding-bottom: 3em; }
 
 .block {
   display: table;

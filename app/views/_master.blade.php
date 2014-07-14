@@ -16,52 +16,24 @@
 	</head>
 	<body>	
 		<section id="pageWrapper">
+			<!-- nvigation -->
 			<header class="navigation">
 		        <div class="menu-wrapper">
-		            
-		
 		            <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
-		
 		            <div class="nav">
 		                <ul id="navigation-menu">
-		                    
-		                    <li class="nav-link"><a href="/">Home</a></li>
-		                    
-		                    <li class="nav-link"><a href="/text">Text</a></li>
-		
-		                    <li class="nav-link"><a href="/user">Users</a></li>
-		
+		                   <li class="nav-link"><a href="/">Home</a></li>
+		                   <li class="nav-link"><a href="/text">Text</a></li>
+		                   <li class="nav-link"><a href="/user">Users</a></li>		
 		                </ul>
 		            </div>
 		        </div>
 		    </header>
-		  
-			<!-- hero -->
-			<div class="hero">
-				<div class="hero-inner">
-			    	<a href="" class="hero-logo"><img src="images/icon/logo@2x.png" alt="logo" width="74" height="79"></a>
-					<div class="hero-copy">
-						@yield('hero')	
-						 @yield('contents')	
-					</div>
-				</div>	
-			</div>
-			<!-- article -->
-			<article class="type-system-serif">
-					@yield('ipsum')
-			</article>
-			<!-- ipsum example -->
-			<div class="block">
-					@yield('ipsum-example')
-			</div>
-			<!-- article -->
-			<article class="type-system-serif">
-					@yield('user')
-			</article>
-			<!-- user example -->
-			
-					@yield('user-example')
-			
+			@yield('hero')			 
+			@yield('ipsum')
+			@yield('ipsum-example')
+			@yield('user')
+			@yield('user-example')
 			<!-- footer -->		
 			<footer class="footer">
 				<div class="footer-logo">
@@ -70,9 +42,9 @@
 				<div class="footer-links">
 					<ul class="nav">
 					  <li><h3>Content</h3></li>
-					  <li><a href="javascript:void(0)">Questions</a></li>
-					  <li><a href="javascript:void(0)">Humor</a></li>
-					  <li><a href="javascript:void(0)">Github Repositories</a></li>
+					  <li class="nav-link"><a href="/">Home</a></li>
+		              <li class="nav-link"><a href="/text">Text</a></li>
+		              <li class="nav-link"><a href="/user">Users</a></li>
 					</ul>
 					<ul>
 					  <li><h3>Follow me</h3></li>
