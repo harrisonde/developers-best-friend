@@ -19,19 +19,6 @@ Loading the application will present a landing page with links to the aforementi
 
 I hope you enjoy!
 
-###Routes
-It is always nice to under the URL structure of an application - expressive clean URLs! This application will use the following routs:
-
-| Method  | Route | Description                  |
-|-------- | ----- | ---------------------------- |
-| GET     | /          | index						         |
-| GET     | /text      | lore ipsum generator form           |
-| GET     | /user      | user generator form                 |
-| POST    | /text      | handel lore ipsum generation        |
-| POST    | /text{num} | Generaten  X num paragraphs of ipsum|
-| POST    | /user      | handle user generation              |
-| POST    | /user{num} | generate X num of fake users        |
-
 ###Lorem Ipsum Generator
 Creating placeholder text is super annoying. The Lorem Ipsum Generator will help get the job done, fast.
 
@@ -53,6 +40,42 @@ Feel free to call our API on the fly and pull a few lines of lorem ipsum. Using 
                 alert(json);
         }
     }); 
+
+###User Generator
+reating fake users is time consuming - the User Generator will help.
+
+####How to use.
+#####Basic
+Get your fake users the good old fashion way and use our form. All you need to do is let us know the number of user and we do the rest.
+
+#####API
+Feel free to call our API. We recommend AJAX to get the job done.
+   
+    $.ajax({
+        url: 'http://p3.harrisondestefano.com/user/1,
+        dataType: 'json',
+        error: function(textStatus, errorThrown, jqXHR ){ 
+        alert('error pulling');				
+    },
+        type: "GET",
+        success: function(json){
+                alert(json);
+        }
+    });
+
+    
+###Routes
+It is always nice to under the URL structure of an application - expressive clean URLs! This application will use the following routs:
+
+| Method  | Route | Description                  |
+|-------- | ----- | ---------------------------- |
+| GET     | /          | index						         |
+| GET     | /text      | lore ipsum generator form           |
+| GET     | /user      | user generator form                 |
+| POST    | /text      | handel lore ipsum generation        |
+| POST    | /text{num} | Generaten  X num paragraphs of ipsum|
+| POST    | /user      | handle user generation              |
+| POST    | /user{num} | generate X num of fake users        |
 
 ## Packages
 Several packages were used in the making of this application. All are awesome because each is open source - go community!
