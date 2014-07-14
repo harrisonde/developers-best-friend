@@ -110,6 +110,12 @@
 		.cards .card{
 			text-align: center;
 		}
+		@media (max-width: 480px) {
+			.cards .card{
+				margin-left: 1.5em;
+				margin-right: 1.5em;
+			}
+		}
 	</style>
 	<div class="cards"></div>
 	
